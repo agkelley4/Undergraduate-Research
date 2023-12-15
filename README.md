@@ -1,2 +1,1 @@
-# special-pancake
-Fluid-Structure-Dynamics undergraduate research
+# Fluid-Structure-Dynamics undergraduate research
