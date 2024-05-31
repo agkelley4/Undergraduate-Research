@@ -15,3 +15,5 @@ Output example is found at Example_plt_Fp_final.png
 Using another parameter sweep in COMSOL, I found the values of forces and torque with respect to every combination of velocity and angular velocity of the cell. plt_Ompy_final.py and plt_Up.py use this data to create plots showing how forces and torque compare to Ompy and Up
 Use force_ellipsoid_Ompy_Up_fullsweep.txt with plt_Ompy_final.py and plt_Up.py.
 Output example is found at Example_plt_Up.png
+
+Using information gathered from parameter sweeps, optimize_Fz_T.m uses inputs of phi, theta, Up,
