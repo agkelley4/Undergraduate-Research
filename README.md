@@ -1,4 +1,4 @@
-# Flow of Squishy Cells Undergraduate Research
+# Flow of Deformable Cells Undergraduate Research
 
 Spherical Harmonic Equation Sheet show the equations in spherical coordinates used to model spherical harmonics. Phi is from 0 to pi and theta is from 0 to 2pi.
 
