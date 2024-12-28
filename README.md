@@ -1,17 +1,10 @@
 # Flow of Deformable Cells Undergraduate Research
 
-Spherical Harmonic Equation Sheet show the equations in spherical coordinates used to model spherical harmonics. Phi is from 0 to pi and theta is from 0 to 2pi.
+/Spherical Harmonic Plotter contains plots of deformable cells and code used to create plots. Contains table of first nine spherical harmonics.
 
-Spherical Harmonic Plot table shows the basic spherical harmonics with coefficient 1
+/Constant Volume Linear Combinations contains solved plots of linear combinations of spherical harmonics that constant volume with the first spherical harmonic Y00. Used Monte Carlo integration to verify our calculations for volume of alphaY00 + betaY10 = Y00. Found under montecarloy00_cartesian_jun6th2024.m. In order to verify if each randomized point was inside the shape, we first converted the cartesian point to spherical point. Next we calculated the radius value of our shape using the same theta and phi value from our randomized point. This point gives us the shell of the shape. Knowing all spherical harmonics lie inside the origin, we then drew a line from the shell to the origin. Finally we can check if our initial randomized point is inside the shape by checking if its on the line or not.
 
-Run plot_sph_harm.py with coeffic_to_plot.py to model spherical harmonic linear combinations. Format CSV file to el,m,alpha \n "el value","m value","coefficient value"
-
-Volume Integration Code.nb is Mathematica code used to take the volume integral of spherical harmonics and linear combinations of spherical harmonics. 
-
-Used linear_comb.m to create the figure, constraint_Y00_Y10_with_sph_harm.png. Shows all combinations of alpha and beta coefficients that will hold the following condition, alphaY00 + betaY10 = Y00. In order to calculate the volume for alphaY10 + betaY10 we had to 
-
-Used Monte Carlo integration to verify our calculations for volume of alphaY00 + betaY10 = Y00. Found under montecarloy00_cartesian_jun6th2024.m. Inorder to verify if each randomized point was inside the shape, we first converted the cartesian point to spherical point. Next we calculated the radius value of our shape using the same theta and phi value from our randomized point. This point gives us the shell of the shape. Knowing all spherical harmonics lie inside the origin, we then drew a line from the shell to the origin. Finally we can check if our inital randomized point is inside the shape by checking if its on the line or not.
-
+/Flow Optimization contains a data analysis on 
 
 I used a parameter sweep in COMSOL to allocate data for forces and torque in XYZ directions for every combination of phi and theta. plt_Fp_final.py and plt_Tp_final.py creates a plot showing the forces and torques, respectivly, compared to each combination of phi and theta.
 Use force_ellipsoid_theta_psi_fullsweep.txt with plt_Fp_final.py and plt_Tp_final.py.
